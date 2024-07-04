@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="icon" href="/Images/logos/Dhanesh.png">
+    <link rel="stylesheet" href="./css/project.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Cinzel:wght@400..900&family=Galada&family=Rubik+Scribble&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <header>
+    <div class="navbar">
+        <div class="nav-main">
+            <div class="logo">
+                <img src="./Images/logos/Dhanesh_transparent.png" alt="">
+            </div>
+            <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="link" id="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="education.html">Education</a>
+            <a href="certificates.html">Certificates</a>
+            <a href="projects.html" id="link">Projects</a>
+        </div>
+    </div>
+</header>
+    <main>
+        <div class="project">
+            <div class="img">
+                <img src="./Images/GlobalBridge.png" alt="">
+            </div>
+            <div class="text">
+                <h3>#GlobalBridge</h3>
+                <p># Title: Platform for Importers and Exporters to grow their business by finding Importer/Exporter.</p>
+                <p># Aim: Main aim of porject was to reduce the fraudes taking place in International Trading due to false documents And also to remove Middle man which will impact root producer.</p>
+                <p># Leaded this project in the PBL II</p>
+                <button>More <i class="fa fa-github"></i></button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="project">
+            <div class="img">
+                <img src="./Images/Benifitbits.png" alt="">
+            </div>
+            <div class="text">
+                <h3>#BENIFITBITS</h3>
+                <p># Title: Platform for NGO's to connect with other NGO's and to the people.</p>
+                <p># Aim: Main aim of this project was to create the social handle for the NGO's to connect with people to increase awareness towards Social Work and also to remove middle man while reciving donation.</p>
+                <p># Leaded this project in the Inter College Hackathon conducted by Modern College of Engineering</p>
+                <button>More <i class="fa fa-github"></i></button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="project">
+            <div class="img">
+                <img src="./Images/SvasthyaJiva.png" alt="">
+            </div>
+            <div class="text">
+                <h3>#SvasthyaJiva</h3>
+                <p># Title: Application for the Hospital which will track the Doctor and by its presence proper slots will be prepared for the Patients.</p>
+                <p># Aim: Main aim of the project is to save the time of Patient by giving proper prioritties to Patient and also manage the work load of Doctor's.</p>
+                <p># Leaded this project in the Smart India Hackathon</p>
+                <button>More <i class="fa fa-github"></i></button>
+            </div>
+        </div>
+
+        <hr>
+        
+    </main>
+
+    <footer>
+        <!-- Footer content goes here -->
+        <div class="footer-content">
+            <div class="footer-section about">
+              <div class="logo footer">
+                  <img src="./Images/logos/Dhanesh_transparent.png" alt="">
+              </div>
+              <p>
+                This is the Portfolio that gives every information about me.
+              </p>
+              <div class="social-media">
+                <a href="#"><i class="fa fa-github"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+        
+            <div class="footer-section links">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="projects.html">Projects</a></li>
+              </ul>
+            </div>
+        
+            <div class="footer-section contact-form">
+              <h3>Contact Us</h3>
+              <form>
+                <input type="email" placeholder="Email" />
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+              </form>
+            </div>
+          </div>
+        
+          <div class="footer-bottom">
+            <p>
+              &copy; 2024. All rights reserved. | Designed by
+              <a href="#">Dhanesh Sathe</a>
+            </p>
+          </div>
+      </footer>
+</body>
+<script>
+  function toggleMenu() {
+            const links = document.getElementById('links');
+            const menuIcon = document.getElementById('menu-icon');
+            links.classList.toggle('show');
+            if (links.classList.contains('show')) {
+                menuIcon.innerHTML = '<i class="fa fa-times" aria-hidden="true"></i>';
+            } else {
+                menuIcon.innerHTML = '<i class="fa fa-bars" aria-hidden="true"></i>';
+            }
+        }
+</script>
+</html>

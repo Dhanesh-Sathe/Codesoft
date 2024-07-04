@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="icon" href="/Images/logos/Dhanesh.png">
+    <link rel="stylesheet" href="./css/education.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Cinzel:wght@400..900&family=Galada&family=Rubik+Scribble&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-main">
+                <div class="logo">
+                    <img src="./Images/logos/Dhanesh_transparent.png" alt="">
+                </div>
+                <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="link" id="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="education.html" id="link">Education</a>
+                <a href="certificates.html">Certificates</a>
+                <a href="projects.html">Projects</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-section">
+            <div class="card" id="one">
+                <br><span>Std: 1st - 4th</span><br><br>
+                <p>School: पूज्य मनिबाई माणकलाल अग्रवाल बालविकास मंदिर, सटाणा, नाशिक<br>
+                Year: 2010-11 <br></p>
+            </div>
+            <div class="card" id="two">
+                <br><span>Std: 5th - 10th</span><br><br>
+                <p>School: BESt English Medium School, Satana, Nashik<br>
+                Year: 2014-2020 <br></p>
+            </div>
+            <div class="card" id="three">
+                <br><span>Exam: SSC</span><br><br>
+                <p>Board: Maharashtra State Board<br>
+                Year: 2020 <br>
+                Percentage: 91.40%</p>
+            </div>
+            <div class="card" id="four">
+                <br><span>Std: 11th - 12th</span><br><br>
+                <p>College: K.A.A.N.M.S. Arts, Commerce and Science College, Satana, Dis.: Nashik <br>
+                Year: 2020-2022 <br></p>
+            </div>
+            <div class="card" id="five">
+                <br><span>Exam: HSC</span><br><br>
+                <p>Board: Maharashtra State Board<br>
+                Year: 2022 <br>
+                Percentage: 80.33%</p>
+            </div>
+            <div class="card" id="six">
+                <br><span>Engineering</span><br><br>
+                <p>University: Savitribai Phule Pune University (SPPU) <br>
+                College: PVG College Of Engineering, Pune<br>
+                Year: 2022-26<br></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer content goes here -->
+        <div class="footer-content">
+            <div class="footer-section about">
+              <div class="logo footer">
+                  <img src="./Images/logos/Dhanesh_transparent.png" alt="">
+              </div>
+              <p>
+                This is the Portfolio that gives every information about me.
+              </p>
+              <div class="social-media">
+                <a href="#"><i class="fa fa-github"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+        
+            <div class="footer-section links">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="projects.html">Projects</a></li>
+              </ul>
+            </div>
+        
+            <div class="footer-section contact-form">
+              <h3>Contact Us</h3>
+              <form>
+                <input type="email" placeholder="Email" />
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+              </form>
+            </div>
+          </div>
+        
+          <div class="footer-bottom">
+            <p>
+              &copy; 2024. All rights reserved. | Designed by
+              <a href="#">Dhanesh Sathe</a>
+            </p>
+          </div>
+      </footer>
+</body>
+<script>
+    function toggleMenu() {
+            const links = document.getElementById('links');
+            const menuIcon = document.getElementById('menu-icon');
+            links.classList.toggle('show');
+            if (links.classList.contains('show')) {
+                menuIcon.innerHTML = '<i class="fa fa-times" aria-hidden="true"></i>';
+            } else {
+                menuIcon.innerHTML = '<i class="fa fa-bars" aria-hidden="true"></i>';
+            }
+        }
+</script>
+</html>

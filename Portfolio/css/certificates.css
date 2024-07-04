@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    font-family: "Cinzel", serif;
+}
+
+body{
+    background-color: #dddddd;
+    
+}
+
+.card{
+    margin: 50px;
+    box-shadow: 0 5px 55px black;
+}
+
+.card .img{
+    height: 400px;
+    width: 700px;
+}
+
+.card .img img{
+    height: 100%;
+    width: 100%;
+}
+
+.odd{
+    margin: 50px 500px 50px 150px;
+}
+
+.even{
+    margin: 50px 150px 50px 500px ;
+}
+
+@media (max-width : 768px) {
+    .odd, .even{
+        margin: 50px 5%;
+    }
+
+    .card{
+        height: auto;
+        width: 90%; 
+        margin: none;
+    }
+
+    .card .img{
+        height: auto;
+        width: 100%;
+    }
+
+    .card .img img{
+        height: 100%;
+        width: 100%;
+    }
+}

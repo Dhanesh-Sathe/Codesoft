@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    font-family: "Cinzel", serif;
+  }
+  
+  body {
+    background-color: #dddddd;
+  }
+  
+  header {
+    width: 100%;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    background-color: #dc3545;
+  }
+  
+  .nav-main {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 100px;
+    width: 150px;
+  }
+  
+  .logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+  }
+  
+  .link {
+    display: flex;
+    align-items: center;
+  }
+  
+  .link a {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: wheat;
+    transition: background-color ease 0.5s;
+    /* background-color: #555; */
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block; /* Added to make all links the same size */
+    box-sizing: border-box; /* Added to include padding in the link size */
+  }
+  
+  .link a:hover {
+    background-color: wheat;
+    color: #dc3545;
+  }
+  
+  #link {
+    background-color: wheat;
+    color: #dc3545;
+  }
+  
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 20px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 0 20px;
+      align-items: flex-start;
+    }
+  
+    .nav-main {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-main .logo{
+      height: 100px;
+      width: 150px;
+    }
+
+    .nav-main .logo img{
+      height: 100%;
+      width: 100%;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .link {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      padding: 10px 0;
+    }
+  
+    .link.show {
+      display: flex;
+    }
+  
+    .link a {
+      margin: 10px 0;
+      padding: 15px 20px;
+      color: #dc3545;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      background-color: wheat;
+      border-radius: 5px;
+      display: inline-block; /* Added to make all links the same size */
+      box-sizing: border-box; /* Added to include padding in the link size */
+      width: 100%; /* Added to make all links the same width */
+    }
+  }
